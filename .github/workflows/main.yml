@@ -18,7 +18,7 @@ jobs:
       uses: crazy-max/ghaction-docker-meta@v1
       with:
         images: vitalyster/hello
-        tag-edge: true
+        tag-match: 'master'
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
     - name: Set up Docker Buildx
